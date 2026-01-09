@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio src="music/Alexandra Stan,Manilla Maniacs - All My People (Alexandra Stan Vs. Manilla Maniacs) [Radio Edit].mp3" 
+    autoplay="autoplay" controls="controls" loop="loop"></audio>
+    <button onclick="pauseMusic()">停止</button>
+    <button onclick="playMusic()">开始</button>
+    <button onclick="resetMusic()">重置</button>
+    <script type="text/javascript">
+     function pauseMusic() {
+     var music = document.getElementById("background-music");
+    music.pause();
+}
+
+function playMusic() {
+var music = document.getElementById("background-music");
+music.play();
+}
+
+function resetMusic() {
+var music = document.getElementById("background-music");
+music.load();
+}
+</script>
+</body>
+</html>
